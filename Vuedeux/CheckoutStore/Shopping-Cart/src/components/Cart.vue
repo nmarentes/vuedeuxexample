@@ -1,38 +1,33 @@
 <template>
   <div class="cart">
-    <h1>{{ msg }}</h1>
-    <div>
-      <h3>Your Cart</h3>
-      <div>{{nodes}}</div>
-      <p>Total: &#36;{{ total }}</p>
-      <button @click={{onCheckoutClicked}}
-        disabled={{hasProducts ? '' : 'disabled'}}>
+    <h3>Your Cart</h3>
+    <div>{{nodes}}</div>
+    <p>Total: &#36;{{ total }}</p>
+    <!--<button @click="onCheckoutClicked" disabled={{hasProducts ? '' : 'disabled'}}>-->
+    <button v-on:click="onCheckoutClicked()">
         Checkout
-      </button>
-    </div>
-
+    </button>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'cart',
-  data() {
-    return {
-      msg: 'Here is your cart',
-      nodes: 'whats in a node',
-      total: 'where do i get the prices from?',
-    };
-  },
-  methods: {
-    onCheckoutClicked() {
-      // do stuff when checkout is clicked
+  export default {
+    name: 'cart',
+    data() {
+      return {
+        nodes: 'whats in a node',
+        total: 'where do i get the prices from?',
+      };
     },
-    hasProducts() {
-      // toggle hasProducts
+    methods: {
+      onCheckoutClicked() {
+        // return e
+      },
+      hasProducts() {
+        // toggle hasProducts
+      },
     },
-  },
-};
+  };
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 {
-  "name": "Shopping-Cart",
+  "name": "shopping-cart",
   "version": "1.0.0",
-  "description": "An example App for Vuedeux",
+  "description": "A Vue.js project to test Vuedeux",
   "author": "nmarentes <nikolmarentes@gmail.com>",
   "private": true,
   "scripts": {
@@ -14,9 +14,8 @@
   },
   "dependencies": {
     "vue": "^2.1.0",
-    "vue-resource": "^1.1.1",
-    "vue-router": "^2.2.0",
-    "vuedeux": "^1.0.6"
+    "vuedeux": "^1.0.6",
+    "vuex": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

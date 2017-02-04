@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-  <users></users>
+    <img src="./assets/logo.png">
+    <product></product>
+    <hr/>
+    <div class = "cartBox">
+    <Cart></Cart>
+    </div>
   </div>
 </template>
 
 <script>
-import Test from './components/test';
-import Users from './components/users';
+import Product from './components/Product';
+import Cart from './components/Cart';
 
 export default {
   name: 'app',
   components: {
-    Test, Users,
+    Product,
+    Cart,
   },
 };
 </script>

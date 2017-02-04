@@ -1,6 +1,6 @@
-# Shopping-Cart Example
+# shopping-cart
 
-> An example App for Vuedeux
+> A Vue.js project to test Vuedeux
 
 ## Build Setup
 
